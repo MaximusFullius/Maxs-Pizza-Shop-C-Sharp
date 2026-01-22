@@ -48,6 +48,7 @@
             this.mtbZip = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gboxCustInfo = new System.Windows.Forms.GroupBox();
+            this.btnAutoFill = new System.Windows.Forms.Button();
             this.btnUpdateInfo = new System.Windows.Forms.Button();
             this.lblLogo = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
@@ -77,6 +78,11 @@
             this.timDateTimeTicker = new System.Windows.Forms.Timer(this.components);
             this.lblDateTime = new System.Windows.Forms.Label();
             this.grpPayMthd = new System.Windows.Forms.GroupBox();
+            this.mtbPayExpirDate = new System.Windows.Forms.MaskedTextBox();
+            this.lblPaySVC = new System.Windows.Forms.Label();
+            this.lblPayExpirDate = new System.Windows.Forms.Label();
+            this.mtbPaySVC = new System.Windows.Forms.MaskedTextBox();
+            this.lblPayType = new System.Windows.Forms.Label();
             this.lblCardNum = new System.Windows.Forms.Label();
             this.mtbPayCardCode = new System.Windows.Forms.MaskedTextBox();
             this.cbPayMethod = new System.Windows.Forms.ComboBox();
@@ -95,6 +101,9 @@
             this.ttInfo = new System.Windows.Forms.ToolTip(this.components);
             this.lblInvalidDataWarning = new System.Windows.Forms.Label();
             this.ttAccept = new System.Windows.Forms.ToolTip(this.components);
+            this.mnuMain = new System.Windows.Forms.MenuStrip();
+            this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuFileClose = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gboxCustInfo.SuspendLayout();
             this.grpOrderInfo.SuspendLayout();
@@ -105,13 +114,14 @@
             this.grpPricing.SuspendLayout();
             this.grpButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCustName
             // 
             this.lblCustName.BackColor = System.Drawing.Color.Transparent;
             this.lblCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblCustName.Location = new System.Drawing.Point(47, 26);
+            this.lblCustName.Location = new System.Drawing.Point(44, 19);
             this.lblCustName.Name = "lblCustName";
             this.lblCustName.Size = new System.Drawing.Size(44, 20);
             this.lblCustName.TabIndex = 0;
@@ -122,12 +132,13 @@
             // 
             this.mtbCustPhone.BeepOnError = true;
             this.mtbCustPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.mtbCustPhone.Location = new System.Drawing.Point(101, 52);
+            this.mtbCustPhone.Location = new System.Drawing.Point(101, 45);
             this.mtbCustPhone.Mask = "(999) 000-0000";
             this.mtbCustPhone.Name = "mtbCustPhone";
             this.mtbCustPhone.Size = new System.Drawing.Size(79, 20);
             this.mtbCustPhone.TabIndex = 3;
             this.mtbCustPhone.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mtbCustPhone.ForeColorChanged += new System.EventHandler(this.mtbCustPhone_ForeColorChanged);
             this.mtbCustPhone.Validating += new System.ComponentModel.CancelEventHandler(this.mtbCustPhone_Validating);
             // 
             // btnClear
@@ -166,7 +177,7 @@
             // 
             this.lblPhone.BackColor = System.Drawing.Color.Transparent;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblPhone.Location = new System.Drawing.Point(44, 52);
+            this.lblPhone.Location = new System.Drawing.Point(41, 44);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(47, 20);
             this.lblPhone.TabIndex = 2;
@@ -177,12 +188,13 @@
             // 
             this.txtCustName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.txtCustName.Location = new System.Drawing.Point(101, 26);
+            this.txtCustName.Location = new System.Drawing.Point(101, 19);
             this.txtCustName.MaxLength = 25;
             this.txtCustName.Name = "txtCustName";
             this.txtCustName.Size = new System.Drawing.Size(162, 20);
             this.txtCustName.TabIndex = 1;
             this.ttInfo.SetToolTip(this.txtCustName, "Name must be at least 5 characters");
+            this.txtCustName.ForeColorChanged += new System.EventHandler(this.txtCustName_ForeColorChanged);
             this.txtCustName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCustName_KeyPress);
             this.txtCustName.Validating += new System.ComponentModel.CancelEventHandler(this.txtCustName_Validating);
             // 
@@ -190,7 +202,7 @@
             // 
             this.lblAddress1.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblAddress1.Location = new System.Drawing.Point(22, 78);
+            this.lblAddress1.Location = new System.Drawing.Point(19, 71);
             this.lblAddress1.Name = "lblAddress1";
             this.lblAddress1.Size = new System.Drawing.Size(69, 20);
             this.lblAddress1.TabIndex = 4;
@@ -200,7 +212,7 @@
             // txtAddressOne
             // 
             this.txtAddressOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.txtAddressOne.Location = new System.Drawing.Point(101, 78);
+            this.txtAddressOne.Location = new System.Drawing.Point(101, 71);
             this.txtAddressOne.MaxLength = 25;
             this.txtAddressOne.Name = "txtAddressOne";
             this.txtAddressOne.Size = new System.Drawing.Size(162, 20);
@@ -211,7 +223,7 @@
             // txtAddressTwo
             // 
             this.txtAddressTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.txtAddressTwo.Location = new System.Drawing.Point(101, 104);
+            this.txtAddressTwo.Location = new System.Drawing.Point(101, 97);
             this.txtAddressTwo.MaxLength = 25;
             this.txtAddressTwo.Name = "txtAddressTwo";
             this.txtAddressTwo.Size = new System.Drawing.Size(162, 20);
@@ -222,7 +234,7 @@
             // 
             this.lblAddress2.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblAddress2.Location = new System.Drawing.Point(22, 104);
+            this.lblAddress2.Location = new System.Drawing.Point(19, 97);
             this.lblAddress2.Name = "lblAddress2";
             this.lblAddress2.Size = new System.Drawing.Size(69, 20);
             this.lblAddress2.TabIndex = 6;
@@ -233,7 +245,7 @@
             // 
             this.lblCity.BackColor = System.Drawing.Color.Transparent;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblCity.Location = new System.Drawing.Point(57, 133);
+            this.lblCity.Location = new System.Drawing.Point(54, 123);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(34, 20);
             this.lblCity.TabIndex = 8;
@@ -244,18 +256,19 @@
             // 
             this.txtCity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.txtCity.Location = new System.Drawing.Point(101, 133);
+            this.txtCity.Location = new System.Drawing.Point(101, 123);
             this.txtCity.MaxLength = 25;
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(162, 20);
             this.txtCity.TabIndex = 9;
+            this.txtCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCustName_KeyPress);
             this.txtCity.Validating += new System.ComponentModel.CancelEventHandler(this.txtCity_Validating);
             // 
             // lblState
             // 
             this.lblState.BackColor = System.Drawing.Color.Transparent;
             this.lblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblState.Location = new System.Drawing.Point(49, 163);
+            this.lblState.Location = new System.Drawing.Point(46, 150);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(42, 20);
             this.lblState.TabIndex = 10;
@@ -264,11 +277,9 @@
             // 
             // cbState
             // 
-            this.cbState.AutoCompleteCustomSource.AddRange(new string[] {
-            "AK"});
             this.cbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.cbState.FormattingEnabled = true;
-            this.cbState.Location = new System.Drawing.Point(101, 163);
+            this.cbState.Location = new System.Drawing.Point(101, 149);
             this.cbState.Name = "cbState";
             this.cbState.Size = new System.Drawing.Size(49, 21);
             this.cbState.Sorted = true;
@@ -278,7 +289,7 @@
             // 
             this.lblZip.BackColor = System.Drawing.Color.Transparent;
             this.lblZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.lblZip.Location = new System.Drawing.Point(25, 190);
+            this.lblZip.Location = new System.Drawing.Point(22, 176);
             this.lblZip.Name = "lblZip";
             this.lblZip.Size = new System.Drawing.Size(66, 20);
             this.lblZip.TabIndex = 12;
@@ -288,7 +299,7 @@
             // mtbZip
             // 
             this.mtbZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.mtbZip.Location = new System.Drawing.Point(101, 190);
+            this.mtbZip.Location = new System.Drawing.Point(101, 176);
             this.mtbZip.Mask = "00000";
             this.mtbZip.Name = "mtbZip";
             this.mtbZip.Size = new System.Drawing.Size(36, 20);
@@ -298,9 +309,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(800, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(822, 25);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(183, 154);
+            this.pictureBox2.Size = new System.Drawing.Size(158, 133);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -308,6 +319,7 @@
             // gboxCustInfo
             // 
             this.gboxCustInfo.BackColor = System.Drawing.Color.Transparent;
+            this.gboxCustInfo.Controls.Add(this.btnAutoFill);
             this.gboxCustInfo.Controls.Add(this.btnUpdateInfo);
             this.gboxCustInfo.Controls.Add(this.lblCustName);
             this.gboxCustInfo.Controls.Add(this.txtCustName);
@@ -327,19 +339,35 @@
             this.gboxCustInfo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.gboxCustInfo.Location = new System.Drawing.Point(95, 108);
             this.gboxCustInfo.Name = "gboxCustInfo";
-            this.gboxCustInfo.Size = new System.Drawing.Size(286, 239);
+            this.gboxCustInfo.Size = new System.Drawing.Size(286, 217);
             this.gboxCustInfo.TabIndex = 18;
             this.gboxCustInfo.TabStop = false;
             this.gboxCustInfo.Text = "Customer Information";
             // 
+            // btnAutoFill
+            // 
+            this.btnAutoFill.Enabled = false;
+            this.btnAutoFill.Location = new System.Drawing.Point(188, 44);
+            this.btnAutoFill.Name = "btnAutoFill";
+            this.btnAutoFill.Size = new System.Drawing.Size(75, 23);
+            this.btnAutoFill.TabIndex = 15;
+            this.btnAutoFill.Text = "Auto-Fill!";
+            this.ttInfo.SetToolTip(this.btnAutoFill, resources.GetString("btnAutoFill.ToolTip"));
+            this.btnAutoFill.UseVisualStyleBackColor = true;
+            this.btnAutoFill.Visible = false;
+            this.btnAutoFill.Click += new System.EventHandler(this.btnAutoFill_Click);
+            // 
             // btnUpdateInfo
             // 
-            this.btnUpdateInfo.Location = new System.Drawing.Point(174, 190);
+            this.btnUpdateInfo.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnUpdateInfo.Location = new System.Drawing.Point(174, 170);
             this.btnUpdateInfo.Name = "btnUpdateInfo";
             this.btnUpdateInfo.Size = new System.Drawing.Size(89, 26);
             this.btnUpdateInfo.TabIndex = 14;
             this.btnUpdateInfo.Text = "Update Info";
-            this.btnUpdateInfo.UseVisualStyleBackColor = true;
+            this.ttInfo.SetToolTip(this.btnUpdateInfo, "Process info and see if its all correct. This might take a moment, so please wait" +
+        "");
+            this.btnUpdateInfo.UseVisualStyleBackColor = false;
             this.btnUpdateInfo.Click += new System.EventHandler(this.btnUpdateInfo_Click);
             // 
             // lblLogo
@@ -348,7 +376,7 @@
             this.lblLogo.BackColor = System.Drawing.Color.Black;
             this.lblLogo.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogo.ForeColor = System.Drawing.Color.Red;
-            this.lblLogo.Location = new System.Drawing.Point(1, 0);
+            this.lblLogo.Location = new System.Drawing.Point(1, 25);
             this.lblLogo.Name = "lblLogo";
             this.lblLogo.Size = new System.Drawing.Size(244, 57);
             this.lblLogo.TabIndex = 19;
@@ -360,12 +388,17 @@
             this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.Maroon;
-            this.lblDate.Location = new System.Drawing.Point(115, 373);
+            this.lblDate.Location = new System.Drawing.Point(112, 373);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(235, 25);
             this.lblDate.TabIndex = 20;
             this.lblDate.Text = "Current Date and Time:";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.WorkerReportsProgress = true;
+            this.backgroundWorker1.WorkerSupportsCancellation = true;
             // 
             // grpOrderInfo
             // 
@@ -379,11 +412,10 @@
             this.grpOrderInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpOrderInfo.Location = new System.Drawing.Point(387, 108);
             this.grpOrderInfo.Name = "grpOrderInfo";
-            this.grpOrderInfo.Size = new System.Drawing.Size(214, 260);
+            this.grpOrderInfo.Size = new System.Drawing.Size(214, 259);
             this.grpOrderInfo.TabIndex = 21;
             this.grpOrderInfo.TabStop = false;
             this.grpOrderInfo.Text = "Order Info";
-            //this.grpOrderInfo.Click += new System.EventHandler(this.grpOrderInfo_Click);
             // 
             // nudQuantity
             // 
@@ -435,14 +467,13 @@
             this.grpOrderToppings.Controls.Add(this.chkTopChe);
             this.grpOrderToppings.Location = new System.Drawing.Point(12, 111);
             this.grpOrderToppings.Name = "grpOrderToppings";
-            this.grpOrderToppings.Size = new System.Drawing.Size(196, 138);
+            this.grpOrderToppings.Size = new System.Drawing.Size(196, 141);
             this.grpOrderToppings.TabIndex = 3;
             this.grpOrderToppings.TabStop = false;
             this.grpOrderToppings.Text = "&Toppings ($1.00 each)";
             // 
             // chkTopMsh
             // 
-            this.chkTopMsh.AutoSize = true;
             this.chkTopMsh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkTopMsh.Location = new System.Drawing.Point(103, 112);
             this.chkTopMsh.Name = "chkTopMsh";
@@ -450,43 +481,43 @@
             this.chkTopMsh.TabIndex = 19;
             this.chkTopMsh.Text = "Mushrooms";
             this.chkTopMsh.UseVisualStyleBackColor = true;
+            this.chkTopMsh.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopHmb
             // 
-            this.chkTopHmb.AutoSize = true;
             this.chkTopHmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTopHmb.Location = new System.Drawing.Point(103, 88);
+            this.chkTopHmb.Location = new System.Drawing.Point(103, 91);
             this.chkTopHmb.Name = "chkTopHmb";
             this.chkTopHmb.Size = new System.Drawing.Size(78, 17);
             this.chkTopHmb.TabIndex = 18;
             this.chkTopHmb.Text = "Hamburger";
             this.chkTopHmb.UseVisualStyleBackColor = true;
+            this.chkTopHmb.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopOni
             // 
-            this.chkTopOni.AutoSize = true;
             this.chkTopOni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTopOni.Location = new System.Drawing.Point(103, 64);
+            this.chkTopOni.Location = new System.Drawing.Point(103, 68);
             this.chkTopOni.Name = "chkTopOni";
             this.chkTopOni.Size = new System.Drawing.Size(59, 17);
             this.chkTopOni.TabIndex = 17;
             this.chkTopOni.Text = "Onions";
             this.chkTopOni.UseVisualStyleBackColor = true;
+            this.chkTopOni.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopPin
             // 
-            this.chkTopPin.AutoSize = true;
             this.chkTopPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTopPin.Location = new System.Drawing.Point(103, 41);
+            this.chkTopPin.Location = new System.Drawing.Point(103, 43);
             this.chkTopPin.Name = "chkTopPin";
             this.chkTopPin.Size = new System.Drawing.Size(73, 17);
             this.chkTopPin.TabIndex = 16;
             this.chkTopPin.Text = "Pineapple";
             this.chkTopPin.UseVisualStyleBackColor = true;
+            this.chkTopPin.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopHam
             // 
-            this.chkTopHam.AutoSize = true;
             this.chkTopHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkTopHam.Location = new System.Drawing.Point(103, 20);
             this.chkTopHam.Name = "chkTopHam";
@@ -494,54 +525,56 @@
             this.chkTopHam.TabIndex = 15;
             this.chkTopHam.Text = "Ham";
             this.chkTopHam.UseVisualStyleBackColor = true;
+            this.chkTopHam.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopBlkOlv
             // 
-            this.chkTopBlkOlv.AutoSize = true;
             this.chkTopBlkOlv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTopBlkOlv.Location = new System.Drawing.Point(6, 111);
+            this.chkTopBlkOlv.Location = new System.Drawing.Point(6, 112);
             this.chkTopBlkOlv.Name = "chkTopBlkOlv";
             this.chkTopBlkOlv.Size = new System.Drawing.Size(85, 17);
             this.chkTopBlkOlv.TabIndex = 14;
             this.chkTopBlkOlv.Text = "Black Olives";
             this.chkTopBlkOlv.UseVisualStyleBackColor = true;
+            this.chkTopBlkOlv.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopGrnOlv
             // 
-            this.chkTopGrnOlv.AutoSize = true;
             this.chkTopGrnOlv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTopGrnOlv.Location = new System.Drawing.Point(6, 88);
+            this.chkTopGrnOlv.Location = new System.Drawing.Point(6, 89);
             this.chkTopGrnOlv.Name = "chkTopGrnOlv";
             this.chkTopGrnOlv.Size = new System.Drawing.Size(87, 17);
             this.chkTopGrnOlv.TabIndex = 13;
             this.chkTopGrnOlv.Text = "Green Olives";
             this.chkTopGrnOlv.UseVisualStyleBackColor = true;
+            this.chkTopGrnOlv.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopPep
             // 
-            this.chkTopPep.AutoSize = true;
             this.chkTopPep.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTopPep.Location = new System.Drawing.Point(6, 64);
+            this.chkTopPep.Location = new System.Drawing.Point(6, 66);
             this.chkTopPep.Name = "chkTopPep";
             this.chkTopPep.Size = new System.Drawing.Size(74, 17);
             this.chkTopPep.TabIndex = 12;
             this.chkTopPep.Text = "Pepperoni";
             this.chkTopPep.UseVisualStyleBackColor = true;
+            this.chkTopPep.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopSsg
             // 
-            this.chkTopSsg.AutoSize = true;
             this.chkTopSsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTopSsg.Location = new System.Drawing.Point(6, 41);
+            this.chkTopSsg.Location = new System.Drawing.Point(6, 43);
             this.chkTopSsg.Name = "chkTopSsg";
             this.chkTopSsg.Size = new System.Drawing.Size(68, 17);
             this.chkTopSsg.TabIndex = 11;
             this.chkTopSsg.Text = "Sausage";
             this.chkTopSsg.UseVisualStyleBackColor = true;
+            this.chkTopSsg.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // chkTopChe
             // 
-            this.chkTopChe.AutoSize = true;
+            this.chkTopChe.Checked = true;
+            this.chkTopChe.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkTopChe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkTopChe.Location = new System.Drawing.Point(6, 20);
             this.chkTopChe.Name = "chkTopChe";
@@ -550,6 +583,7 @@
             this.chkTopChe.Text = "Cheese";
             this.ttCheeseTopInfo.SetToolTip(this.chkTopChe, "Submit as marked if you want any cheese (not extra cheese) on your pizza.");
             this.chkTopChe.UseVisualStyleBackColor = true;
+            this.chkTopChe.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // grpOrderSize
             // 
@@ -571,7 +605,6 @@
             this.radSizeLrg.Name = "radSizeLrg";
             this.radSizeLrg.Size = new System.Drawing.Size(52, 17);
             this.radSizeLrg.TabIndex = 9;
-            this.radSizeLrg.TabStop = true;
             this.radSizeLrg.Text = "Large";
             this.ttSizePrice.SetToolTip(this.radSizeLrg, "Large Pizzas are $12 each");
             this.radSizeLrg.UseVisualStyleBackColor = true;
@@ -579,6 +612,7 @@
             // radSizeReg
             // 
             this.radSizeReg.AutoSize = true;
+            this.radSizeReg.Checked = true;
             this.radSizeReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radSizeReg.Location = new System.Drawing.Point(63, 19);
             this.radSizeReg.Name = "radSizeReg";
@@ -588,6 +622,7 @@
             this.radSizeReg.Text = "Regular";
             this.ttSizePrice.SetToolTip(this.radSizeReg, "Regular size pizzas are $10 each");
             this.radSizeReg.UseVisualStyleBackColor = true;
+            this.radSizeReg.CheckedChanged += new System.EventHandler(this.chkTopChe_CheckedChanged);
             // 
             // radSizeSmall
             // 
@@ -597,7 +632,6 @@
             this.radSizeSmall.Name = "radSizeSmall";
             this.radSizeSmall.Size = new System.Drawing.Size(50, 17);
             this.radSizeSmall.TabIndex = 7;
-            this.radSizeSmall.TabStop = true;
             this.radSizeSmall.Text = "Small";
             this.ttSizePrice.SetToolTip(this.radSizeSmall, "Small Pizzas are $9.00 each");
             this.radSizeSmall.UseVisualStyleBackColor = true;
@@ -610,7 +644,7 @@
             this.lblOrderNumInt.Name = "lblOrderNumInt";
             this.lblOrderNumInt.Size = new System.Drawing.Size(40, 16);
             this.lblOrderNumInt.TabIndex = 1;
-            this.lblOrderNumInt.Text = "1234";
+            this.lblOrderNumInt.Text = "0001";
             // 
             // lblOrderNumTxt
             // 
@@ -664,7 +698,7 @@
             this.lblDateTime.BackColor = System.Drawing.Color.Transparent;
             this.lblDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateTime.ForeColor = System.Drawing.Color.Maroon;
-            this.lblDateTime.Location = new System.Drawing.Point(115, 398);
+            this.lblDateTime.Location = new System.Drawing.Point(112, 398);
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.Size = new System.Drawing.Size(329, 25);
             this.lblDateTime.TabIndex = 24;
@@ -673,21 +707,76 @@
             // grpPayMthd
             // 
             this.grpPayMthd.BackColor = System.Drawing.Color.Transparent;
+            this.grpPayMthd.Controls.Add(this.mtbPayExpirDate);
+            this.grpPayMthd.Controls.Add(this.lblPaySVC);
+            this.grpPayMthd.Controls.Add(this.lblPayExpirDate);
+            this.grpPayMthd.Controls.Add(this.mtbPaySVC);
+            this.grpPayMthd.Controls.Add(this.lblPayType);
             this.grpPayMthd.Controls.Add(this.lblCardNum);
             this.grpPayMthd.Controls.Add(this.mtbPayCardCode);
             this.grpPayMthd.Controls.Add(this.cbPayMethod);
             this.grpPayMthd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpPayMthd.Location = new System.Drawing.Point(601, 301);
             this.grpPayMthd.Name = "grpPayMthd";
-            this.grpPayMthd.Size = new System.Drawing.Size(243, 122);
+            this.grpPayMthd.Size = new System.Drawing.Size(257, 130);
             this.grpPayMthd.TabIndex = 25;
             this.grpPayMthd.TabStop = false;
             this.grpPayMthd.Text = "Payment Method";
             // 
+            // mtbPayExpirDate
+            // 
+            this.mtbPayExpirDate.Enabled = false;
+            this.mtbPayExpirDate.Location = new System.Drawing.Point(110, 98);
+            this.mtbPayExpirDate.Mask = "00/0000";
+            this.mtbPayExpirDate.Name = "mtbPayExpirDate";
+            this.mtbPayExpirDate.Size = new System.Drawing.Size(60, 20);
+            this.mtbPayExpirDate.TabIndex = 7;
+            this.mtbPayExpirDate.ValidatingType = typeof(System.DateTime);
+            this.mtbPayExpirDate.Visible = false;
+            // 
+            // lblPaySVC
+            // 
+            this.lblPaySVC.AutoSize = true;
+            this.lblPaySVC.Location = new System.Drawing.Point(65, 72);
+            this.lblPaySVC.Name = "lblPaySVC";
+            this.lblPaySVC.Size = new System.Drawing.Size(39, 13);
+            this.lblPaySVC.TabIndex = 6;
+            this.lblPaySVC.Text = "SVC: ";
+            this.lblPaySVC.Visible = false;
+            // 
+            // lblPayExpirDate
+            // 
+            this.lblPayExpirDate.AutoSize = true;
+            this.lblPayExpirDate.Location = new System.Drawing.Point(2, 98);
+            this.lblPayExpirDate.Name = "lblPayExpirDate";
+            this.lblPayExpirDate.Size = new System.Drawing.Size(102, 13);
+            this.lblPayExpirDate.TabIndex = 5;
+            this.lblPayExpirDate.Text = "Expiration Date: ";
+            this.lblPayExpirDate.Visible = false;
+            // 
+            // mtbPaySVC
+            // 
+            this.mtbPaySVC.Enabled = false;
+            this.mtbPaySVC.Location = new System.Drawing.Point(110, 72);
+            this.mtbPaySVC.Mask = "999";
+            this.mtbPaySVC.Name = "mtbPaySVC";
+            this.mtbPaySVC.Size = new System.Drawing.Size(31, 20);
+            this.mtbPaySVC.TabIndex = 4;
+            this.mtbPaySVC.Visible = false;
+            // 
+            // lblPayType
+            // 
+            this.lblPayType.AutoSize = true;
+            this.lblPayType.Location = new System.Drawing.Point(61, 19);
+            this.lblPayType.Name = "lblPayType";
+            this.lblPayType.Size = new System.Drawing.Size(43, 13);
+            this.lblPayType.TabIndex = 3;
+            this.lblPayType.Text = "Type: ";
+            // 
             // lblCardNum
             // 
             this.lblCardNum.AutoSize = true;
-            this.lblCardNum.Location = new System.Drawing.Point(6, 47);
+            this.lblCardNum.Location = new System.Drawing.Point(20, 46);
             this.lblCardNum.Name = "lblCardNum";
             this.lblCardNum.Size = new System.Drawing.Size(84, 13);
             this.lblCardNum.TabIndex = 2;
@@ -696,7 +785,7 @@
             // 
             // mtbPayCardCode
             // 
-            this.mtbPayCardCode.Location = new System.Drawing.Point(96, 47);
+            this.mtbPayCardCode.Location = new System.Drawing.Point(110, 46);
             this.mtbPayCardCode.Mask = "9999-9999-9999";
             this.mtbPayCardCode.Name = "mtbPayCardCode";
             this.mtbPayCardCode.Size = new System.Drawing.Size(141, 20);
@@ -712,7 +801,7 @@
             "American Express",
             "Check",
             "Cash"});
-            this.cbPayMethod.Location = new System.Drawing.Point(96, 19);
+            this.cbPayMethod.Location = new System.Drawing.Point(110, 19);
             this.cbPayMethod.Name = "cbPayMethod";
             this.cbPayMethod.Size = new System.Drawing.Size(141, 21);
             this.cbPayMethod.TabIndex = 0;
@@ -740,9 +829,9 @@
             this.lblTotalNum.AutoSize = true;
             this.lblTotalNum.Location = new System.Drawing.Point(81, 64);
             this.lblTotalNum.Name = "lblTotalNum";
-            this.lblTotalNum.Size = new System.Drawing.Size(46, 13);
+            this.lblTotalNum.Size = new System.Drawing.Size(51, 13);
             this.lblTotalNum.TabIndex = 5;
-            this.lblTotalNum.Text = "$00.00";
+            this.lblTotalNum.Text = "\"$0.00\"";
             // 
             // lblTotal
             // 
@@ -760,9 +849,9 @@
             this.lblTaxNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTaxNum.Location = new System.Drawing.Point(81, 45);
             this.lblTaxNum.Name = "lblTaxNum";
-            this.lblTaxNum.Size = new System.Drawing.Size(34, 13);
+            this.lblTaxNum.Size = new System.Drawing.Size(44, 13);
             this.lblTaxNum.TabIndex = 3;
-            this.lblTaxNum.Text = "$0.00";
+            this.lblTaxNum.Text = "\"$0.00\"";
             // 
             // lblTax
             // 
@@ -780,9 +869,9 @@
             this.lblSubtotalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtotalNum.Location = new System.Drawing.Point(81, 24);
             this.lblSubtotalNum.Name = "lblSubtotalNum";
-            this.lblSubtotalNum.Size = new System.Drawing.Size(34, 13);
+            this.lblSubtotalNum.Size = new System.Drawing.Size(44, 13);
             this.lblSubtotalNum.TabIndex = 1;
-            this.lblSubtotalNum.Text = "$0.00";
+            this.lblSubtotalNum.Text = "\"$0.00\"";
             // 
             // lblSubtotal
             // 
@@ -842,6 +931,31 @@
             this.lblInvalidDataWarning.Text = "Please enter all data before submiting order form";
             this.lblInvalidDataWarning.Visible = false;
             // 
+            // mnuMain
+            // 
+            this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuFile});
+            this.mnuMain.Location = new System.Drawing.Point(0, 0);
+            this.mnuMain.Name = "mnuMain";
+            this.mnuMain.Size = new System.Drawing.Size(980, 24);
+            this.mnuMain.TabIndex = 29;
+            this.mnuMain.Text = "menuStrip1";
+            // 
+            // mnuFile
+            // 
+            this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuFileClose});
+            this.mnuFile.Name = "mnuFile";
+            this.mnuFile.Size = new System.Drawing.Size(37, 20);
+            this.mnuFile.Text = "File";
+            // 
+            // mnuFileClose
+            // 
+            this.mnuFileClose.Name = "mnuFileClose";
+            this.mnuFileClose.Size = new System.Drawing.Size(103, 22);
+            this.mnuFileClose.Text = "Close";
+            this.mnuFileClose.Click += new System.EventHandler(this.mnuFileClose_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnOrder;
@@ -861,13 +975,16 @@
             this.Controls.Add(this.gboxCustInfo);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.grpButtons);
+            this.Controls.Add(this.mnuMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.mnuMain;
             this.MaximumSize = new System.Drawing.Size(1000, 550);
             this.MinimumSize = new System.Drawing.Size(1000, 550);
             this.Name = "Form1";
             this.Text = "Fuller\'s Pizza Order Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.gboxCustInfo.ResumeLayout(false);
             this.gboxCustInfo.PerformLayout();
@@ -875,7 +992,6 @@
             this.grpOrderInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
             this.grpOrderToppings.ResumeLayout(false);
-            this.grpOrderToppings.PerformLayout();
             this.grpOrderSize.ResumeLayout(false);
             this.grpOrderSize.PerformLayout();
             this.grpPayMthd.ResumeLayout(false);
@@ -884,6 +1000,8 @@
             this.grpPricing.PerformLayout();
             this.grpButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.mnuMain.ResumeLayout(false);
+            this.mnuMain.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -910,42 +1028,21 @@
         private System.Windows.Forms.GroupBox gboxCustInfo;
         private System.Windows.Forms.Label lblLogo;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.GroupBox grpOrderInfo;
         private System.Windows.Forms.Label lblOrderNumTxt;
-        private System.Windows.Forms.GroupBox grpOrderSize;
-        private System.Windows.Forms.RadioButton radSizeLrg;
-        private System.Windows.Forms.RadioButton radSizeReg;
-        private System.Windows.Forms.RadioButton radSizeSmall;
         private System.Windows.Forms.Label lblOrderNumInt;
-        private System.Windows.Forms.GroupBox grpOrderToppings;
-        private System.Windows.Forms.CheckBox chkTopMsh;
-        private System.Windows.Forms.CheckBox chkTopHmb;
-        private System.Windows.Forms.CheckBox chkTopOni;
-        private System.Windows.Forms.CheckBox chkTopPin;
-        private System.Windows.Forms.CheckBox chkTopHam;
-        private System.Windows.Forms.CheckBox chkTopBlkOlv;
-        private System.Windows.Forms.CheckBox chkTopGrnOlv;
-        private System.Windows.Forms.CheckBox chkTopPep;
-        private System.Windows.Forms.CheckBox chkTopSsg;
-        private System.Windows.Forms.CheckBox chkTopChe;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnPrice;
         private System.Windows.Forms.Timer timDateTimeTicker;
         private System.Windows.Forms.Label lblDateTime;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.GroupBox grpPayMthd;
         private System.Windows.Forms.GroupBox grpPricing;
-        private System.Windows.Forms.Label lblSubtotalNum;
         private System.Windows.Forms.Label lblSubtotal;
-        private System.Windows.Forms.Label lblTotalNum;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label lblTaxNum;
         private System.Windows.Forms.Label lblTax;
         private System.Windows.Forms.GroupBox grpButtons;
         private System.Windows.Forms.ComboBox cbPayMethod;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.NumericUpDown nudQuantity;
         private System.Windows.Forms.MaskedTextBox mtbPayCardCode;
         private System.Windows.Forms.Label lblCardNum;
         private System.Windows.Forms.ToolTip ttSizePrice;
@@ -955,6 +1052,36 @@
         private System.Windows.Forms.Label lblInvalidDataWarning;
         private System.Windows.Forms.Button btnUpdateInfo;
         private System.Windows.Forms.ToolTip ttAccept;
+        public System.Windows.Forms.CheckBox chkTopPin;
+        public System.Windows.Forms.CheckBox chkTopMsh;
+        public System.Windows.Forms.CheckBox chkTopHmb;
+        public System.Windows.Forms.CheckBox chkTopOni;
+        public System.Windows.Forms.CheckBox chkTopHam;
+        public System.Windows.Forms.CheckBox chkTopBlkOlv;
+        public System.Windows.Forms.CheckBox chkTopGrnOlv;
+        public System.Windows.Forms.CheckBox chkTopPep;
+        public System.Windows.Forms.CheckBox chkTopSsg;
+        public System.Windows.Forms.CheckBox chkTopChe;
+        public System.Windows.Forms.GroupBox grpOrderToppings;
+        public System.Windows.Forms.GroupBox grpOrderInfo;
+        public System.Windows.Forms.GroupBox grpOrderSize;
+        public System.Windows.Forms.RadioButton radSizeLrg;
+        public System.Windows.Forms.RadioButton radSizeReg;
+        public System.Windows.Forms.RadioButton radSizeSmall;
+        public System.Windows.Forms.Label lblQuantity;
+        public System.Windows.Forms.NumericUpDown nudQuantity;
+        public System.Windows.Forms.Label lblSubtotalNum;
+        public System.Windows.Forms.Label lblTotalNum;
+        public System.Windows.Forms.Label lblTaxNum;
+        private System.Windows.Forms.Label lblPaySVC;
+        private System.Windows.Forms.Label lblPayExpirDate;
+        private System.Windows.Forms.MaskedTextBox mtbPaySVC;
+        private System.Windows.Forms.Label lblPayType;
+        private System.Windows.Forms.MaskedTextBox mtbPayExpirDate;
+        private System.Windows.Forms.Button btnAutoFill;
+        private System.Windows.Forms.MenuStrip mnuMain;
+        private System.Windows.Forms.ToolStripMenuItem mnuFile;
+        private System.Windows.Forms.ToolStripMenuItem mnuFileClose;
     }
 }
 

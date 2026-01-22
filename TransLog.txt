@@ -1,36 +1,56 @@
-Maxwell Fuller	9:04:20 PM
-Maxwell Fuller | (952) 261-9094 | 13969 Yosemite Court |  | Savage | MN | 55378-1898
-0
-------------------------------------
-Maxwell R Fuller	4:31:34 PM
-Maxwell R Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-0
-------------------------------------
-Maxwell R Fuller	4:31:37 PM
-Maxwell R Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-0
-------------------------------------
-Maxwell R Fuller	4:32:47 PM
-Maxwell R Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-0
-------------------------------------
-Max Fuller	4:43:49 PM
-Max Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-0
-------------------------------------
-Max Fuller	Wednesday, February 27, 2019  |  4:56:27 PM
-Max Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-0
-------------------------------------
-Maxwell Fuller	Wednesday, February 27, 2019  |  4:57:20 PM
-Maxwell Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-0
-------------------------------------
-Maxwell Fuller	Wednesday, February 27, 2019  |  4:57:31 PM
-Maxwell Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-0
-------------------------------------
-Maxwell Fuller	Wednesday, February 27, 2019  |  4:59:15 PM
-Maxwell Fuller | 9522619094 | 13969 Yosemite Court |  | Savage | MN | 55378
-12.84
-------------------------------------
+Order Number: 0000
+Date/Time: Tuesday, April 9, 2019  |  7:14:56 PM
+Customer Info: 
+
+Maxwell Fuller
+9522619094
+13969 Yosemite Court
+[NO ADDRESS LINE 2]
+Savage
+MN
+55378
+Total Payment: $11.77
+-----------------END OF ORDER 0000-------------------
+
+Order Number: 0001
+Date/Time: Tuesday, April 9, 2019  |  7:28:19 PM
+Customer Info: 
+
+asjdhfg ashfj
+9522619094
+fdhas hfjdhfjs
+[NO ADDRESS LINE 2]
+asdfadfkljh
+MT
+35354
+Total Payment: $16.05
+-----------------END OF ORDER 0001-------------------
+
+Order Number: 0002
+Date/Time: Tuesday, April 16, 2019  |  8:28:40 PM
+Customer Info: 
+
+asjdhfg ashfj
+9522619094
+fdhas hfjdhfjs
+[NO ADDRESS LINE 2]
+asdfadfkljh
+MT
+35354
+Total Payment: $14.98
+-----------------END OF ORDER 0002-------------------
+
+Order Number: 0003
+Date/Time: Tuesday, April 16, 2019  |  8:45:19 PM
+Customer Info: 
+
+Sdgfsgf
+1234567890
+sdfgsdfg
+sdfgsdfg
+dsfgdsfg
+MN
+12345
+Total Payment: $11.77
+-----------------END OF ORDER 0003-------------------
+
