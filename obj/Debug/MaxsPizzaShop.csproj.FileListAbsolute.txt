@@ -1,0 +1,68 @@
+F:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\MaxsPizzaShop.exe.config
+F:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\MaxsPizzaShop.exe
+F:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\MaxsPizzaShop.pdb
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\MaxsPizzaShop.csprojAssemblyReference.cache
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\MaxsPizzaShop.Form1.resources
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\MaxsPizzaShop.Properties.Resources.resources
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\MaxsPizzaShop.csproj.GenerateResource.cache
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\MaxsPizzaShop.csproj.CoreCompileInputs.cache
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\MaxsPizzaShop.exe
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\MaxsPizzaShop.pdb
+G:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.exe.config
+G:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.exe
+G:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.pdb
+G:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csprojAssemblyReference.cache
+G:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.Form1.resources
+G:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.Properties.Resources.resources
+G:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csproj.GenerateResource.cache
+G:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csproj.CoreCompileInputs.cache
+G:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.exe
+G:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.pdb
+F:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.exe.config
+F:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.exe
+F:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.pdb
+F:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csprojAssemblyReference.cache
+F:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.Form1.resources
+F:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.Properties.Resources.resources
+F:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csproj.GenerateResource.cache
+F:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csproj.CoreCompileInputs.cache
+F:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.exe
+F:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.pdb
+E:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.exe.config
+E:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.exe
+E:\New folder\School\dot net\MaxsPizzaShop\bin\Debug\MaxsPizzaShop.pdb
+E:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csprojAssemblyReference.cache
+E:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.Form1.resources
+E:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.Properties.Resources.resources
+E:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csproj.GenerateResource.cache
+E:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.csproj.CoreCompileInputs.cache
+E:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.exe
+E:\New folder\School\dot net\MaxsPizzaShop\obj\Debug\MaxsPizzaShop.pdb
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\MaxsPizzaShop.exe.config
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\MaxsPizzaShop.exe
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\MaxsPizzaShop.pdb
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csprojAssemblyReference.cache
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.Form1.resources
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.Properties.Resources.resources
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csproj.GenerateResource.cache
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csproj.CoreCompileInputs.cache
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.exe
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.pdb
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\MaxsPizzaShop.exe.config
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\MaxsPizzaShop.exe
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\MaxsPizzaShop.pdb
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csprojAssemblyReference.cache
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.Form1.resources
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.Properties.Resources.resources
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csproj.GenerateResource.cache
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csproj.CoreCompileInputs.cache
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.exe
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.pdb
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\HtmlAgilityPack.dll
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\HtmlAgilityPack.pdb
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\HtmlAgilityPack.xml
+G:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csproj.CopyComplete
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\HtmlAgilityPack.dll
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\HtmlAgilityPack.pdb
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\bin\Debug\HtmlAgilityPack.xml
+E:\New folder\School\dot net\MaxsPizzaShop - OLD\MaxsPizzaShop - Copy\obj\Debug\MaxsPizzaShop.csproj.CopyComplete

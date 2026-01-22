@@ -1,0 +1,49 @@
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\Max\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\Max\source\repos\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+C:\Users\Max\source\repos\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\Max\source\repos\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Max\source\repos\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\Max\source\repos\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\Max\source\repos\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\Max\source\repos\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\Max\source\repos\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\Max\source\repos\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+E:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+E:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+E:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+E:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+E:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+E:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+E:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+E:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+E:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+E:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+G:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+G:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+G:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+G:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+G:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+G:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+G:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+G:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+G:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+G:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+F:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+F:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+F:\New folder\School\dot net\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+F:\New folder\School\dot net\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
